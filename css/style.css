@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(20, 20, 20);
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho {
+    display: flex;
+    padding: 20px 0 0 12%;
+}
+
+.logo {
+    display: flex;
+    padding-right: 30px;
+    font-family: 'Courgette', sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+.t1 {
+    color: rgb(227, 15, 235);
+    font-size: 40px;
+}
+.t2 {
+    color: rgb(236, 19, 74);
+    
+}
+.desc {
+    color: red;
+    font-size: 18px;
+}
+.cabecalho__menu {
+    margin: 2% ;
+    
+}
+.cabecalho__menu__link{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: rgb(255, 0, 191);
+}
+.cabecalho__menu__link:hover{
+    transition: 300ms;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: #ff00f2;
+}
+
+.conteudo {
+    display: flex;
+    align-items:center;
+    margin: 0% 40% 2% 5%;
+}
+
+.conteudo__secao {
+    padding: 0% 10%;
+    text-align:left;
+    color: azure;
+    
+}
+
+.conteudo__secao__title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 8% 0;
+}
+
+.conteudo__secao__desc{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.instagram{
+    display: flex;
+    margin: 30px;
+    padding: 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 10px;
+    color: rgb(255, 0, 191);
+    align-items: center;
+    
+}
+
+.instagram:hover{
+    transition: 300ms;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: #ff00f2;
+}
+.btn-insta{
+    display: flex;
+    width: 10%;
+    padding-right: 3%;
+}
+
+.whatsapp{
+    display: flex;
+    margin: 30px;
+    padding: 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.whatsapp:hover{
+    transition: 300ms;
+    background-color: rgb(0, 255, 55);
+    color: rgb(255, 255, 255);
+    border-color: #000000;
+}
+.btn-zap{
+    display: flex;
+    width: 10%;
+    padding-right: 3%;
+}
+
+#slider {
+    display: flex; 
+    margin: auto;
+    padding-bottom: 0%;
+    align-items: center;
+}
+
+
+#slider img{
+    opacity: 0;
+    border-radius: 8%;
+    position:absolute;
+    width: 400px;
+    object-fit: cover;
+    transition: opacity 800ms;
+}
+
+.img3{
+    width: 500px;
+}
+
+#slider img.selected { 
+    opacity: 1;
+}
+
+
+/* FOLHA DE ESTILOS PARA CELULAR */
+@media (max-width: 1100px) {
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@500&display=swap');
+
+.logo {
+        display: flex;
+        padding: 0%;
+        font-family: 'Courgette', sans-serif;
+        flex-direction: column;
+        align-items: center;
+}    
+ 
+.conteudo{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding-top: 30%;
+    margin: 0;
+   
+}
+
+#slider{
+    display: flex;
+    padding-bottom: 50%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20%;
+}
+#slider img{
+    width: 170px;
+}
+.img3{
+    width: 20%;
+}
+.btn-insta{
+    display: flex;
+    width: 20%;
+    padding-right: 3%;
+}
+
+.btn-zap{
+    display: flex;
+    width: 20%;
+    padding-right: 3%;
+}
+
+    
+}
